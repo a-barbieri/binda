@@ -4,25 +4,21 @@ module Binda
   class ImagesController < ApplicationController
     before_action :set_image, only: [:show, :edit, :update, :destroy, :remove_image]
 
-    # GET /images
     def index
       @images = Image.all
     end
 
-    # GET /images/1
     def show
+      redirect_to action: :edit
     end
 
-    # GET /images/new
     def new
       @image = Image.new
     end
 
-    # GET /images/1/edit
     def edit
     end
 
-    # POST /images
     def create
       @image = Image.new(image_params)
 
@@ -33,7 +29,6 @@ module Binda
       end
     end
 
-    # PATCH/PUT /images/1
     def update
       if @image.update(image_params)
         redirect_to image_path( @image.id ), notice: 'Image was successfully updated.'
@@ -42,7 +37,6 @@ module Binda
       end
     end
 
-    # DELETE /images/1
     def destroy
       @image.destroy
       redirect_to images_url, notice: 'Image was successfully destroyed.'
