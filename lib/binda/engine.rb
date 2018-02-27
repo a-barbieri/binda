@@ -11,6 +11,8 @@ require 'mini_magick'
 require 'ancestry'
 require 'kaminari'
 require 'bourbon'
+require 'graphql'
+require 'graphiql/rails'
 
 # **Binda** is a CMS with an intuitive out-of-the-box interface to manage and customize page components.
 # 

@@ -37,6 +37,8 @@ Gem::Specification.new do |s|
   s.add_dependency "kaminari",             "~> 1.0"
   s.add_dependency "friendly_id",          ">= 5.1",        "< 5.4"
   s.add_dependency "bourbon",              "4.3.4"
+  s.add_dependency "graphql",              "1.8.0.pre6"
+  s.add_dependency "graphiql-rails",       "~> 1.4"
 
 
   # DEVELOPMENT GEMS
@@ -59,5 +61,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rubocop",                     "~> 0.52.1"
   s.add_development_dependency "mry",                         "~> 0.52"
   s.add_development_dependency "generator_spec",              "~> 0.9.4"
-
 end
