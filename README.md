@@ -809,6 +809,8 @@ Let's say you have a component which depends on another components and you want 
 
 ---
 
+## GraphQL API
+
 
 
 # How to contribute
